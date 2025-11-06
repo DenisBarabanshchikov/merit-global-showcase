@@ -13,6 +13,11 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['Inter', 'Cairo', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
+        latin: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
+        arabic: ['Cairo', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -47,15 +52,10 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
+        gold: {
+          start: "hsl(var(--gold-start))",
+          mid: "hsl(var(--gold-mid))",
+          end: "hsl(var(--gold-end))",
         },
       },
       borderRadius: {
