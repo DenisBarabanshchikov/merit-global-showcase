@@ -15,5 +15,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: './', // For GitHub Pages compatibility
+  base: '/merit-global-showcase/', // GitHub Pages repository path
 }));
