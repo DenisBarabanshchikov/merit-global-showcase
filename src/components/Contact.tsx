@@ -4,17 +4,15 @@ import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
 import { Mail, MapPin } from 'lucide-react';
-
 const Contact = () => {
-  const { t } = useLanguage();
-
+  const {
+    t
+  } = useLanguage();
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     window.location.href = 'mailto:aalfaddaghi@gmail.com';
   };
-
-  return (
-    <section id="contact" className="py-24 gradient-navy">
+  return <section id="contact" className="py-24 gradient-navy">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
@@ -26,28 +24,7 @@ const Contact = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          <Card className="p-8 shadow-gold bg-card/95 backdrop-blur">
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <label className="block text-sm font-medium mb-2">{t('contact.name')}</label>
-                <Input required placeholder={t('contact.name')} />
-              </div>
-              
-              <div>
-                <label className="block text-sm font-medium mb-2">{t('contact.email')}</label>
-                <Input type="email" required placeholder={t('contact.email')} />
-              </div>
-              
-              <div>
-                <label className="block text-sm font-medium mb-2">{t('contact.message')}</label>
-                <Textarea required placeholder={t('contact.message')} rows={5} />
-              </div>
-              
-              <Button type="submit" className="w-full gradient-gold text-primary font-semibold shadow-gold hover:scale-105 transition-smooth">
-                {t('contact.send')}
-              </Button>
-            </form>
-          </Card>
+          
 
           <div className="space-y-6">
             <Card className="p-8 shadow-gold bg-card/95 backdrop-blur">
@@ -78,8 +55,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Contact;
