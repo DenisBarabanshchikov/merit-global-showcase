@@ -26,8 +26,8 @@ const Contact = () => {
         <div className="max-w-6xl mx-auto">
           
 
-          <div className="flex flex-col md:flex-row gap-6 w-full">
-            <Card className="p-8 shadow-gold bg-card/95 backdrop-blur">
+          <div className="flex flex-col md:flex-row gap-6 justify-center items-stretch max-w-4xl mx-auto">
+            <Card className="p-8 shadow-gold bg-card/95 backdrop-blur flex-1 md:w-80">
               <div className="flex items-start gap-4">
                 <div className="p-3 gradient-gold rounded-lg flex-shrink-0">
                   <Mail className="h-6 w-6 text-primary" />
@@ -41,7 +41,7 @@ const Contact = () => {
               </div>
             </Card>
 
-            <Card className="p-8 shadow-gold bg-card/95 backdrop-blur">
+            <Card className="p-8 shadow-gold bg-card/95 backdrop-blur flex-1 md:w-80">
               <div className="flex items-start gap-4">
                 <div className="p-3 gradient-gold rounded-lg flex-shrink-0">
                   <MapPin className="h-6 w-6 text-primary" />
