@@ -23,10 +23,10 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           
 
-          <div className="space-y-6">
+          <div className="flex flex-col md:flex-row gap-6 w-full">
             <Card className="p-8 shadow-gold bg-card/95 backdrop-blur">
               <div className="flex items-start gap-4">
                 <div className="p-3 gradient-gold rounded-lg flex-shrink-0">
